@@ -1,6 +1,3 @@
-//Wykorzystanie konwertera I2C z modułem PCF8574T do obsługi wyświetlacza LCD ze sterownikiem HD44780.
-//Ustawienia przystsowane do trybu Master Tansmiter, zapis danych z master do slave.
-
 #include <avr/io.h>
 #include <util/delay.h>
 #include <string.h>
@@ -52,12 +49,8 @@ int main()
   LCD_setCursor(0, 0);
   LCD_print("Hello World!");
  
- 
   while(1)
-  {
-    
-    
-  }
+  {}
   return 0;
 }
 

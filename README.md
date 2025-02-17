@@ -36,6 +36,44 @@ Usage Instructions:
 
 - Upload the program to the microcontroller using an ISP programmer.
 
+- The LCD screen will display "Hello World!".
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-5️⃣ The LCD screen will display "Hello World!".
+**Opis projektu - Polski**
+
+Ten projekt demonstruje obsługę wyświetlacza LCD poprzez magistralę I2C z wykorzystaniem ekspandera PCF8574T na ATmega328P. Implementacja odbywa się w czystym C bez bibliotek Arduino, co pozwala na pełną kontrolę nad komunikacją I2C.
+
+Funkcjonalność:
+
+- Komunikacja z LCD przez interfejs I2C (PCF8574T)
+
+- Obsługa podstawowych funkcji LCD: inicjalizacja, czyszczenie ekranu, ustawianie kursora, wyświetlanie tekstu
+
+- Implementacja sterowania I2C w czystym C, bez bibliotek Arduino
+
+- Obsługa mikrokontrolera ATmega328P na niskim poziomie (rejestry)
+
+Wymagania sprzętowe:
+
+- Mikrokontroler ATmega328P (np. Arduino Nano lub standalone AVR)
+
+- Ekspander PCF8574T do komunikacji LCD przez I2C
+
+- Wyświetlacz LCD kompatybilny z HD44780
+
+- Przewody połączeniowe
+
+- Zasilanie 5V
+
+Instrukcja użytkowania:
+
+- Skompiluj kod w środowisku obsługującym AVR C (np. Atmel Studio, PlatformIO, AVR-GCC).
+
+- Podłącz ekspander PCF8574T do magistrali I2C (SDA – PC4, SCL – PC5).
+
+- Podłącz LCD do PCF8574T zgodnie z dokumentacją układu.
+
+- Wgraj program do mikrokontrolera za pomocą programatora ISP.
+
+- Na ekranie LCD pojawi się tekst "Hello World!".
